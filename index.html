@@ -1,2 +1,25 @@
-# freefire-site
-Site de venda de contas Free Fire
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conta de 50 Centavos</title>
+</head>
+<body>
+  <h1>Calculadora de 50 centavos</h1>
+  
+  <p>Digite quantas moedas de 50 centavos você tem:</p>
+  <input type="number" id="quantidade" placeholder="Ex: 4">
+  <button onclick="calcular()">Calcular</button>
+  
+  <p id="resultado"></p>
+
+  <script>
+    function calcular() {
+      let qtd = document.getElementById("quantidade").value;
+      let total = qtd * 0.50;
+      document.getElementById("resultado").innerText = 
+        "Total: R$ " + total.toFixed(2);
+    }
+  </script>
+</body>
+    </html>
